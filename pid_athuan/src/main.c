@@ -48,7 +48,7 @@ void Pid(int32_t des_speed)
 	dPart=Kd*(Err-Old_Err)*Inv_Sampling_Time;
 	printf("Err-Old_Err= %d\n",Err-Old_Err);
 	printf("dPart = %d\n",dPart);
-	iPart+= Ki*Sampling_Time*Err/1000;
+	iPart += Ki*Sampling_Time*Err/1000;
 	printf("iPart = %f\n",iPart);
 	Out_Put = pPart + dPart + iPart;
 	printf("Out_Put = %d\n",Out_Put);

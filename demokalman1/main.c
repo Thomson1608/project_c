@@ -12,7 +12,7 @@ double update(double input);
 void measurementUpdate();
 int main(){
 	int i=0;
-	double  input[20]={0,100,200,150,600,40,500,00,100,10,0,0,100,25,10,40,80,10,0,9};
+	double  input[20]={0,300,600,900,600,300,500,00,100,10,0,0,100,25,10,40,80,10,0,9};
 	for(i=0 ; i<20 ; i++){
 		printf("ketqua : %f\n", update(input[i]));
 	}
